@@ -1,0 +1,158 @@
+.popup {
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 50
+	opacity: 0
+	transition opacity 300ms ease-in-out
+	display: flex
+	justify-content: center
+	align-items: center
+	visibility: hidden
+	&.popup_show {
+		opacity: 1
+		visibility: visible
+		transform translate(0, 0)
+		.popup__close {
+			transform scale(1)
+		}
+		.popup__content {
+			transform translate(0, 0)
+		}
+	}
+}
+
+.popup__close {
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	background rgba(#000, 0.7)
+	transform scale(0)
+	transition opacity 300ms ease-in-out, transform 300ms ease-in-out
+}
+
+.popup__content {
+	position: relative
+	z-index: 5
+	transition opacity 300ms ease-in-out, transform 300ms ease-in-out
+	transform translate(0, -100%)
+}
+
+.popup__btn {
+	position: absolute
+	top: 1em
+	right: 1em
+	height: 1.3em
+	width: 1.3em
+	cursor: pointer
+	transition transform 500ms ease
+	&:hover {
+		transform rotate(180deg)
+	}
+}
+.icon-svg {
+	width: 100%
+	height: 100%
+}
+
+
+/////        контакты    /////////
+.popup__contacts {
+	.popup__content {
+		width: rem(360);
+		margin: auto
+		background-color: #E9E9E9;
+		border-radius: 5px;
+		padding: 0.75rem 1.88rem 1.88rem;
+	}
+	.icon-svg{
+		fill #2a2a2a
+	}
+}
+
+.popup__contacts-title {
+	text-align: center
+	h3 {
+		color: #000;
+		font-size: 1.875rem;
+		font-weight: 600;
+	}
+}
+.popup__contacts-list{
+	width: rem(220);
+	margin-top: 1.5rem
+	p {
+		font-size: rem(16);
+		line-height: rem(24);
+		font-weight: 400
+		color: #2a2a2a
+		display: flex
+		justify-content: space-between
+		margin-bottom: 0.7rem
+	}
+	
+	img {
+		width: rem(22)
+		margin-right: rem(5)
+	}
+	
+	span {
+		font-weight: 600
+		width: rem(143)
+	}
+}
+
+
+
+/////        Политика    /////////
+.popup__policy {
+	.popup__content {
+		width: rem(360);
+		margin: auto
+		background-color: #E9E9E9;
+		border-radius: 5px;
+		padding: 0.75rem 1.88rem 1.88rem;
+	}
+	.icon-svg{
+		fill #2a2a2a
+	}
+}
+
+.popup__policy {
+	text-align: center
+	h3 {
+		color: #000;
+		font-size: 1.875rem;
+		font-weight: 600;
+	}
+}
+
+.popup__policy-txt {
+	margin-top: 1.5rem
+	text-align: left
+	p{
+		font-size: rem(16);
+		line-height: rem(24);
+		font-weight: 400
+		color: #2a2a2a
+		margin-top: 1.6rem
+	}
+	a{
+		font-size: rem(16);
+		line-height: rem(24);
+		font-weight: 400
+		color: #2a2a2a
+		display: block
+		margin-top: 0.85rem
+	}
+}
+
+
+
+
+
+

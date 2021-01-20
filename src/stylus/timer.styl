@@ -1,0 +1,106 @@
+
+.countdown-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.countdown-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	position: relative
+	
+	&:last-child{
+		margin-right: 0
+	}
+	p {
+		color: #ffffff
+		text-transform: capitalize
+	}
+}
+
+.countdown-item span {
+	color: #C99655;
+	line-height: 1
+	font-weight: 600;
+	text-transform: uppercase;
+	
+}
+
+.countdown-svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#timer-1 {
+	margin: 3.6rem 0 0 1.1rem;
+}
+
+#timer-1, #timer-3 {
+	
+	.countdown-item {
+		margin: 0 rem(30) 0 0;
+		width: rem(84);
+		height: rem(84);
+		
+		p {
+			font-size: 0.7rem;
+			margin-top: 2rem
+		}
+	}
+	
+	span {
+		font-size: rem(43);
+		margin-top: 1.3rem
+	}
+	
+	.countdown-svg {
+		width: rem(84);
+		height: rem(84);
+		border: 1px solid rgba(#fff, 0.05)
+		border-radius: 50%
+	}
+	
+	path {
+		stroke-width: 6px
+	}
+}
+
+#timer-2 {
+	margin: 1.9rem auto 0;
+	width: 21.3rem;
+	
+	.countdown-item {
+		margin: 0 1.35rem 0 0;
+		width: rem(63);
+		height: rem(63);
+		p {
+			font-size: 0.5rem;
+			margin-top: 1.5rem
+		}
+		
+		span {
+			font-size: rem(33);
+			margin-top: 1rem
+		}
+	}
+	
+	.countdown-svg {
+		width: rem(63);
+		height: rem(63);
+		border: 1px solid rgba(#fff, 0.05)
+		border-radius: 50%
+	}
+	
+	path {
+		stroke-width: 5px
+	}
+}
+
+#timer-3 {
+	margin: 2.1rem 0 0 1.5rem;
+}

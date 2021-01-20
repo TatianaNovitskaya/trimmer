@@ -1,0 +1,26 @@
+
+/*****************************************
+sprites
+******************************************/
+$spritePath = '../images/'
+spriteWidth($sprite)
+	$sprite[4]
+
+spriteHeight($sprite)
+	$sprite[5]
+
+spritePosition($sprite)
+	background-position: $sprite[2] $sprite[3]
+
+spriteImage($sprite)
+	background-image: url($spritePath+$sprite[8])
+
+sprite($sprite)
+	spriteImage($sprite)
+	spritePosition($sprite)
+	width:  spriteWidth($sprite)
+	height: spriteHeight($sprite)
+
+spriteUrl($sprite)
+	unquote("url("+$spritePath+$sprite[8]+") "+ $sprite[2] +" "+ $sprite[3]+"  no-repeat")
+

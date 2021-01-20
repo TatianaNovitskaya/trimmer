@@ -1,0 +1,144 @@
+.review {
+	background: #E9E9E9;
+	padding: 3.1rem 0 5.4rem
+	
+	.wrapper {
+		&:before {
+			content ""
+			display: block;
+			position: absolute;
+			background: url("../images/man-2.png") no-repeat
+			background-size: cover
+			width: rem(742)
+			height: rem(1090)
+			top: -29.7rem;
+			right: -41.7rem;
+		}
+	}
+}
+
+.review__title {
+	text-align: center
+}
+
+.review__wrap {
+	margin-top: -0.4rem
+}
+
+.review__slider {
+	width: 100%
+	max-width: rem(1030)
+	margin: auto
+	
+	.swiper-container {
+		padding: 3.6rem 0 0
+	}
+}
+
+.review__item {
+	width: rem(945) !important
+	background: #FFFFFF;
+	box-shadow: 0px 0px 30px rgba(80, 80, 80, 0.25);
+	position: relative
+	display: flex
+	padding: rem(30)
+	//margin: 0 rem(65) !important
+	margin: auto
+	
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		background: url("../images/quote.png") no-repeat
+		background-size: cover
+		width: rem(117)
+		height: rem(78)
+		top: -3.5rem;
+		right: 0.3rem;
+	}
+}
+
+.review__item-column {
+	width: 50%
+}
+
+.user-name {
+	p {
+		font-size: rem(24);
+		line-height: rem(36);
+		font-weight: 500
+		text-transform: capitalize
+		color: #1a0000;
+	}
+}
+
+.review__item-rate {
+	width: rem(102)
+	margin-top: 0.3rem
+	display: flex
+	justify-content: space-between
+	align-items: baseline
+	
+	img {
+		width: rem(20)
+		height: rem(20)
+	}
+}
+
+.review__item-txt {
+	margin-top: 2.4rem
+	
+	p {
+		font-size: rem(15);
+		line-height: rem(22);
+		font-weight: 400
+		color: #000;
+	}
+}
+
+.user-photo {
+	width: rem(340)
+	margin: auto
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+	display: none
+}
+
+.review__button {
+	width: rem(13)
+	height: rem(39)
+}
+
+.chevron-svg {
+	width: rem(13)
+	height: rem(39)
+}
+
+.review__button-prev {
+	left: 3.5rem;
+	top: 19rem;
+}
+
+.review__button-next {
+	right: 3.5rem;
+	top: 19rem;
+}
+
+.review__swiper-pagination {
+	left: 50%
+	transform translate(-50%, 0)
+	bottom: -2.6rem
+	
+	.swiper-pagination-bullet {
+		background: #7D7D7D
+		width: rem(10)
+		height: rem(10)
+		opacity: 1
+		margin: 0 rem(7.5)
+	}
+	
+	.swiper-pagination-bullet-active {
+		background: #C99655;
+	}
+}
